@@ -9,39 +9,39 @@
 /* Begin PBXBuildFile section */
 		9D15A43228877F7600896AC4 /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15A43128877F7600896AC4 /* FruitCell.swift */; };
 		9D15A43428877FBE00896AC4 /* FruitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D15A43328877FBE00896AC4 /* FruitCell.xib */; };
-		9D15A4372887884300896AC4 /* FruitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15A4362887884300896AC4 /* FruitDetailViewController.swift */; };
-		9D15A4392887884F00896AC4 /* FruitDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D15A4382887884F00896AC4 /* FruitDetailViewController.xib */; };
 		9D15A43C2887896500896AC4 /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15A43B2887896500896AC4 /* FruitModel.swift */; };
 		9D6DC7E0287E1E0300D96A6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DC7DF287E1E0300D96A6D /* AppDelegate.swift */; };
-		9D6DC7E2287E1E0300D96A6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DC7E1287E1E0300D96A6D /* SceneDelegate.swift */; };
 		9D6DC7E4287E1E0300D96A6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DC7E3287E1E0300D96A6D /* ViewController.swift */; };
-		9D6DC7E7287E1E0300D96A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6DC7E5287E1E0300D96A6D /* Main.storyboard */; };
 		9D6DC7E9287E1E0600D96A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6DC7E8287E1E0600D96A6D /* Assets.xcassets */; };
-		9D6DC7EC287E1E0600D96A6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6DC7EA287E1E0600D96A6D /* LaunchScreen.storyboard */; };
-		9DA2B08F288984FD00C8EC03 /* FruitDetailCitrusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2B08E288984FD00C8EC03 /* FruitDetailCitrusViewController.swift */; };
-		9DA2B0912889850E00C8EC03 /* FruitDetailCitrusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2B0902889850E00C8EC03 /* FruitDetailCitrusViewController.xib */; };
 		9DA2B0932889883E00C8EC03 /* SelectedFruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2B0922889883E00C8EC03 /* SelectedFruit.swift */; };
 		9DA2B0952889886000C8EC03 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2B0942889886000C8EC03 /* RequestManager.swift */; };
+		BACF259A29D7E119002631CD /* FruitDetailCitrusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BACF259529D7E119002631CD /* FruitDetailCitrusViewController.xib */; };
+		BACF259B29D7E119002631CD /* FruitDetailCitrusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF259629D7E119002631CD /* FruitDetailCitrusViewController.swift */; };
+		BACF259C29D7E119002631CD /* FruitDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BACF259829D7E119002631CD /* FruitDetailViewController.xib */; };
+		BACF259D29D7E119002631CD /* FruitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF259929D7E119002631CD /* FruitDetailViewController.swift */; };
+		BACF259F29D7E245002631CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF259E29D7E244002631CD /* SceneDelegate.swift */; };
+		BACF25A629D7E2E2002631CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACF25A229D7E2E2002631CD /* LaunchScreen.storyboard */; };
+		BACF25A729D7E2E2002631CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACF25A429D7E2E2002631CD /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D15A43128877F7600896AC4 /* FruitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
 		9D15A43328877FBE00896AC4 /* FruitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitCell.xib; sourceTree = "<group>"; };
-		9D15A4362887884300896AC4 /* FruitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailViewController.swift; sourceTree = "<group>"; };
-		9D15A4382887884F00896AC4 /* FruitDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitDetailViewController.xib; sourceTree = "<group>"; };
 		9D15A43B2887896500896AC4 /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
 		9D6DC7DC287E1E0300D96A6D /* CoolFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6DC7DF287E1E0300D96A6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D6DC7E1287E1E0300D96A6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9D6DC7E3287E1E0300D96A6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9D6DC7E6287E1E0300D96A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D6DC7E8287E1E0600D96A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D6DC7EB287E1E0600D96A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6DC7ED287E1E0600D96A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DA2B08E288984FD00C8EC03 /* FruitDetailCitrusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailCitrusViewController.swift; sourceTree = "<group>"; };
-		9DA2B0902889850E00C8EC03 /* FruitDetailCitrusViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitDetailCitrusViewController.xib; sourceTree = "<group>"; };
 		9DA2B0922889883E00C8EC03 /* SelectedFruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFruit.swift; sourceTree = "<group>"; };
 		9DA2B0942889886000C8EC03 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		BACF259529D7E119002631CD /* FruitDetailCitrusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FruitDetailCitrusViewController.xib; sourceTree = "<group>"; };
+		BACF259629D7E119002631CD /* FruitDetailCitrusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitDetailCitrusViewController.swift; sourceTree = "<group>"; };
+		BACF259829D7E119002631CD /* FruitDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FruitDetailViewController.xib; sourceTree = "<group>"; };
+		BACF259929D7E119002631CD /* FruitDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitDetailViewController.swift; sourceTree = "<group>"; };
+		BACF259E29D7E244002631CD /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BACF25A329D7E2E2002631CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BACF25A529D7E2E2002631CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,24 +55,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9D15A43028877F5A00896AC4 /* TableView */ = {
+		9D15A43028877F5A00896AC4 /* FruitDetailsTVC */ = {
 			isa = PBXGroup;
 			children = (
 				9D15A43128877F7600896AC4 /* FruitCell.swift */,
 				9D15A43328877FBE00896AC4 /* FruitCell.xib */,
 			);
-			path = TableView;
-			sourceTree = "<group>";
-		};
-		9D15A4352887882E00896AC4 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				9D15A4362887884300896AC4 /* FruitDetailViewController.swift */,
-				9D15A4382887884F00896AC4 /* FruitDetailViewController.xib */,
-				9DA2B08E288984FD00C8EC03 /* FruitDetailCitrusViewController.swift */,
-				9DA2B0902889850E00C8EC03 /* FruitDetailCitrusViewController.xib */,
-			);
-			path = Details;
+			path = FruitDetailsTVC;
 			sourceTree = "<group>";
 		};
 		9D15A43A2887895500896AC4 /* Model */ = {
@@ -103,19 +92,94 @@
 		9D6DC7DE287E1E0300D96A6D /* CoolFruits */ = {
 			isa = PBXGroup;
 			children = (
-				9D15A43A2887895500896AC4 /* Model */,
-				9D15A4352887882E00896AC4 /* Details */,
-				9D15A43028877F5A00896AC4 /* TableView */,
 				9D6DC7DF287E1E0300D96A6D /* AppDelegate.swift */,
-				9D6DC7E1287E1E0300D96A6D /* SceneDelegate.swift */,
-				9D6DC7E3287E1E0300D96A6D /* ViewController.swift */,
-				9DA2B0942889886000C8EC03 /* RequestManager.swift */,
-				9D6DC7E5287E1E0300D96A6D /* Main.storyboard */,
-				9D6DC7E8287E1E0600D96A6D /* Assets.xcassets */,
-				9D6DC7EA287E1E0600D96A6D /* LaunchScreen.storyboard */,
-				9D6DC7ED287E1E0600D96A6D /* Info.plist */,
+				BACF259E29D7E244002631CD /* SceneDelegate.swift */,
+				BAAC99A729D7E0C500AF535F /* Modules */,
+				9D15A43A2887895500896AC4 /* Model */,
+				BACF25A829D7E2FE002631CD /* Services */,
+				BACF25A129D7E27A002631CD /* Ressources */,
+				BACF25AA29D7E37D002631CD /* Extensions */,
+				BACF25A929D7E376002631CD /* Commons */,
 			);
 			path = CoolFruits;
+			sourceTree = "<group>";
+		};
+		BAAC99A729D7E0C500AF535F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BACF25A029D7E262002631CD /* FruitsList */,
+				BACF259329D7E119002631CD /* Details */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BACF259329D7E119002631CD /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				9D15A43028877F5A00896AC4 /* FruitDetailsTVC */,
+				BACF259429D7E119002631CD /* FruitDetailsCitrusVC */,
+				BACF259729D7E119002631CD /* FruitDetailsVC */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		BACF259429D7E119002631CD /* FruitDetailsCitrusVC */ = {
+			isa = PBXGroup;
+			children = (
+				BACF259529D7E119002631CD /* FruitDetailCitrusViewController.xib */,
+				BACF259629D7E119002631CD /* FruitDetailCitrusViewController.swift */,
+			);
+			path = FruitDetailsCitrusVC;
+			sourceTree = "<group>";
+		};
+		BACF259729D7E119002631CD /* FruitDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				BACF259829D7E119002631CD /* FruitDetailViewController.xib */,
+				BACF259929D7E119002631CD /* FruitDetailViewController.swift */,
+			);
+			path = FruitDetailsVC;
+			sourceTree = "<group>";
+		};
+		BACF25A029D7E262002631CD /* FruitsList */ = {
+			isa = PBXGroup;
+			children = (
+				9D6DC7E3287E1E0300D96A6D /* ViewController.swift */,
+			);
+			path = FruitsList;
+			sourceTree = "<group>";
+		};
+		BACF25A129D7E27A002631CD /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				BACF25A229D7E2E2002631CD /* LaunchScreen.storyboard */,
+				BACF25A429D7E2E2002631CD /* Main.storyboard */,
+				9D6DC7ED287E1E0600D96A6D /* Info.plist */,
+				9D6DC7E8287E1E0600D96A6D /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		BACF25A829D7E2FE002631CD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2B0942889886000C8EC03 /* RequestManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BACF25A929D7E376002631CD /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		BACF25AA29D7E37D002631CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,12 +240,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D15A4392887884F00896AC4 /* FruitDetailViewController.xib in Resources */,
 				9D15A43428877FBE00896AC4 /* FruitCell.xib in Resources */,
-				9D6DC7EC287E1E0600D96A6D /* LaunchScreen.storyboard in Resources */,
+				BACF259A29D7E119002631CD /* FruitDetailCitrusViewController.xib in Resources */,
+				BACF259C29D7E119002631CD /* FruitDetailViewController.xib in Resources */,
+				BACF25A729D7E2E2002631CD /* Main.storyboard in Resources */,
+				BACF25A629D7E2E2002631CD /* LaunchScreen.storyboard in Resources */,
 				9D6DC7E9287E1E0600D96A6D /* Assets.xcassets in Resources */,
-				9D6DC7E7287E1E0300D96A6D /* Main.storyboard in Resources */,
-				9DA2B0912889850E00C8EC03 /* FruitDetailCitrusViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,33 +258,33 @@
 			files = (
 				9D15A43228877F7600896AC4 /* FruitCell.swift in Sources */,
 				9DA2B0932889883E00C8EC03 /* SelectedFruit.swift in Sources */,
+				BACF259F29D7E245002631CD /* SceneDelegate.swift in Sources */,
+				BACF259D29D7E119002631CD /* FruitDetailViewController.swift in Sources */,
 				9D6DC7E4287E1E0300D96A6D /* ViewController.swift in Sources */,
 				9D6DC7E0287E1E0300D96A6D /* AppDelegate.swift in Sources */,
-				9D6DC7E2287E1E0300D96A6D /* SceneDelegate.swift in Sources */,
 				9D15A43C2887896500896AC4 /* FruitModel.swift in Sources */,
+				BACF259B29D7E119002631CD /* FruitDetailCitrusViewController.swift in Sources */,
 				9DA2B0952889886000C8EC03 /* RequestManager.swift in Sources */,
-				9D15A4372887884300896AC4 /* FruitDetailViewController.swift in Sources */,
-				9DA2B08F288984FD00C8EC03 /* FruitDetailCitrusViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9D6DC7E5287E1E0300D96A6D /* Main.storyboard */ = {
+		BACF25A229D7E2E2002631CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9D6DC7E6287E1E0300D96A6D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9D6DC7EA287E1E0600D96A6D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D6DC7EB287E1E0600D96A6D /* Base */,
+				BACF25A329D7E2E2002631CD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BACF25A429D7E2E2002631CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BACF25A529D7E2E2002631CD /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -349,12 +413,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2F4PT43ZHJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoolFruits/Info.plist;
+				INFOPLIST_FILE = CoolFruits/Ressources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,9 +426,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.falabella.CoolFruits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -377,12 +444,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2F4PT43ZHJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoolFruits/Info.plist;
+				INFOPLIST_FILE = CoolFruits/Ressources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,9 +457,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.falabella.CoolFruits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
