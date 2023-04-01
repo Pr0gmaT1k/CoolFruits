@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FruitDetailViewController" customModule="CoolFruits" customModuleProvider="target">
+            <connections>
+                <outlet property="familyLabel" destination="Uw2-s1-pWs" id="Nlr-59-kkn"/>
+                <outlet property="genusLabel" destination="pXN-CZ-Qga" id="i4v-e5-MJK"/>
+                <outlet property="nutritionLabel" destination="9c4-SM-ggP" id="xSY-st-7gH"/>
+                <outlet property="view" destination="iN0-l3-epB" id="4UT-jI-2mO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uw2-s1-pWs">
+                    <rect key="frame" x="32" y="76" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXN-CZ-Qga">
+                    <rect key="frame" x="32" y="113" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c4-SM-ggP">
+                    <rect key="frame" x="32" y="150" width="41.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9c4-SM-ggP" firstAttribute="top" secondItem="pXN-CZ-Qga" secondAttribute="bottom" constant="16" id="Kc4-6N-Erg"/>
+                <constraint firstItem="Uw2-s1-pWs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="32" id="Lkq-oW-tjh"/>
+                <constraint firstItem="pXN-CZ-Qga" firstAttribute="leading" secondItem="Uw2-s1-pWs" secondAttribute="leading" id="T4g-9S-O6q"/>
+                <constraint firstItem="pXN-CZ-Qga" firstAttribute="top" secondItem="Uw2-s1-pWs" secondAttribute="bottom" constant="16" id="bg7-DC-pVb"/>
+                <constraint firstItem="Uw2-s1-pWs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="d2B-C0-BOJ"/>
+                <constraint firstItem="9c4-SM-ggP" firstAttribute="leading" secondItem="pXN-CZ-Qga" secondAttribute="leading" id="kBa-fY-aLV"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="101"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
