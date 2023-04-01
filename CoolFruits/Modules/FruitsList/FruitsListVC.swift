@@ -1,21 +1,32 @@
 //
-//  ViewController.swift
+//  FruitsListVCViewController.swift
 //  CoolFruits
 //
-//  Created by Luis Alejandro Zapata Gonzalez on 12-07-22.
+//  Created by AzerTy on 01/04/2023.
 //
 
 import UIKit
 
+// MARK: - ViewModel
 public class HomeViewModel {
     var fruits: [FruitModel?]?
 }
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    var viewModel: HomeViewModel = HomeViewModel()
+// MARK: - Delegate
+protocol FruitsListVCDelegate: AnyObject {
+    func didSelect(fruit: FruitModel)
+}
+
+// MARK: - Class
+class FruitsListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    // MARK: - IBOutlets
     @IBOutlet weak var fruitsTableView: UITableView!
     
+    // MARK: - Properties
+    var viewModel: HomeViewModel = HomeViewModel()
+    weak var delegate: FruitsListVCDelegate?
+    
+    // MARK: - funcs
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -51,28 +62,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        SelectedFruit.fruit = viewModel.fruits?[indexPath.row]
-        if SelectedFruit.fruit?.genus == "Citrus" {
-            navigateToCitrusDetail()
-        } else {
-            navigateToDetail()
-        }
-    }
-    var selectedFruit: FruitModel?
-    
-    func navigateToCitrusDetail() {
-        let vc = FruitDetailViewController(nibName: "FruitDetailCitrusViewController", bundle: nil)
-        vc.title = SelectedFruit.fruit?.name
-        if let navigator = navigationController {
-            navigator.pushViewController(vc, animated: true)
-        }
-    }
-    
-    func navigateToDetail() {
-        let vc = FruitDetailViewController(nibName: "FruitDetailViewController", bundle: nil)
-        vc.title = SelectedFruit.fruit?.name
-        if let navigator = navigationController {
-            navigator.pushViewController(vc, animated: true)
-        }
+        guard let fruit = viewModel.fruits?[indexPath.row] else { return }
+        delegate?.didSelect(fruit: fruit)
     }
 }
