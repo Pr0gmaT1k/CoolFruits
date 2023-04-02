@@ -12,16 +12,10 @@ struct FruitModel: Codable {
     var id: Int?
     var family, order: String?
     var nutritions: NutritionsModel?
-    enum CodingKeys: String, CodingKey {
-        case genus, name, id, family, order, nutritions
-    }
 }
 
 struct NutritionsModel: Codable {
     var carbohydrates, protein, fat: Double?
     var calories: Int?
     var sugar: Double?
-    enum CodingKeys: String, CodingKey {
-        case carbohydrates, protein, fat, calories, sugar
-    }
 }
