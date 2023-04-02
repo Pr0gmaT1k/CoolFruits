@@ -22,6 +22,7 @@
 		BACF25BF29D7ED7E002631CD /* FruitsListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BACF25BD29D7ED7E002631CD /* FruitsListVC.xib */; };
 		BACF25C229D7F563002631CD /* FruitDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25C029D7F563002631CD /* FruitDetailsVC.swift */; };
 		BACF25C329D7F563002631CD /* FruitDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BACF25C129D7F563002631CD /* FruitDetailsVC.xib */; };
+		BACF25C929D8794E002631CD /* FruitsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25C829D8794E002631CD /* FruitsListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		BACF25BD29D7ED7E002631CD /* FruitsListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitsListVC.xib; sourceTree = "<group>"; };
 		BACF25C029D7F563002631CD /* FruitDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsVC.swift; sourceTree = "<group>"; };
 		BACF25C129D7F563002631CD /* FruitDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitDetailsVC.xib; sourceTree = "<group>"; };
+		BACF25C829D8794E002631CD /* FruitsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9D15A43028877F5A00896AC4 /* FruitDetailsTVC */ = {
+		9D15A43028877F5A00896AC4 /* FruitTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				9D15A43128877F7600896AC4 /* FruitCell.swift */,
 				9D15A43328877FBE00896AC4 /* FruitCell.xib */,
 			);
-			path = FruitDetailsTVC;
+			path = FruitTableViewCell;
 			sourceTree = "<group>";
 		};
 		9D15A43A2887895500896AC4 /* Model */ = {
@@ -106,18 +108,19 @@
 		BAAC99A729D7E0C500AF535F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9D15A43028877F5A00896AC4 /* FruitTableViewCell */,
 				BACF25A029D7E262002631CD /* FruitsList */,
-				BACF259329D7E119002631CD /* Details */,
+				BACF259329D7E119002631CD /* FruitDetails */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		BACF259329D7E119002631CD /* Details */ = {
+		BACF259329D7E119002631CD /* FruitDetails */ = {
 			isa = PBXGroup;
 			children = (
 				BACF259729D7E119002631CD /* FruitDetailsVC */,
 			);
-			path = Details;
+			path = FruitDetails;
 			sourceTree = "<group>";
 		};
 		BACF259729D7E119002631CD /* FruitDetailsVC */ = {
@@ -132,7 +135,7 @@
 		BACF25A029D7E262002631CD /* FruitsList */ = {
 			isa = PBXGroup;
 			children = (
-				9D15A43028877F5A00896AC4 /* FruitDetailsTVC */,
+				BACF25C829D8794E002631CD /* FruitsListPresenter.swift */,
 				BACF25BC29D7ED7E002631CD /* FruitsListVC.swift */,
 				BACF25BD29D7ED7E002631CD /* FruitsListVC.xib */,
 			);
@@ -264,6 +267,7 @@
 				BACF25B329D7E665002631CD /* FruitsListCoordinator.swift in Sources */,
 				9D6DC7E0287E1E0300D96A6D /* AppDelegate.swift in Sources */,
 				9D15A43C2887896500896AC4 /* FruitModel.swift in Sources */,
+				BACF25C929D8794E002631CD /* FruitsListPresenter.swift in Sources */,
 				9DA2B0952889886000C8EC03 /* RequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

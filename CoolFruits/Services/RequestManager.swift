@@ -17,7 +17,7 @@ class RequestManager {
         self.session = URLSession(configuration: URLSessionConfiguration.default)
     }
     
-    public func getAllFruts(_ completion: @escaping (([FruitModel?]?, Error?) -> Void)) {
+    public func getAllFruts(_ completion: @escaping (([FruitModel]?, Error?) -> Void)) {
         session.dataTask(with: URL(string: baseURL + "/all")!) { data, response, error in
             if error != nil {
                 completion(nil, error)
