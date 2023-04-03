@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: - Delegate
 protocol FruitsCoordinatorDelegate: AnyObject {
-    func FruitsListCoordinatorDidFinish(_ coordinator: FruitsCoordinator)
+    func fruitsListCoordinatorDidFinish(_ coordinator: FruitsCoordinator)
 }
 
 // MARK: - Coordinator
@@ -19,6 +19,7 @@ final class FruitsCoordinator: CoordinatorPresentable {
     var childCoordinators: [Coordinator] = []
     var rootViewController: FruitsListVC
 
+    // MARK: - funcs
     init() {
         rootViewController = FruitsListVC()
         rootViewController.modalPresentationStyle = .fullScreen

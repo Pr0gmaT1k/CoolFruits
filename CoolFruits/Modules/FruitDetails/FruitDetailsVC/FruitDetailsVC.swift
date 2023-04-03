@@ -25,10 +25,10 @@ final class FruitDetailsVC: UIViewController {
     }
     
     func fill(fruit: FruitModel) {
-        familyLabel.text = "Family: \(fruit.family!)"
-        genusLabel.text = "Genus: \(fruit.genus!)"
+        familyLabel.text = "Family: \(fruit.family ?? "")"
+        genusLabel.text = "Genus: \(fruit.genus ?? "")"
         nutritionLabel.text = getNutritionText(selectedFruit: fruit)
-        view.backgroundColor = fruit.genus == "Citrus" ? .green : .white
+        view.backgroundColor = fruit.isCitrus ? .green : .white
     }
     
     func getNutritionText(selectedFruit: FruitModel) -> String {

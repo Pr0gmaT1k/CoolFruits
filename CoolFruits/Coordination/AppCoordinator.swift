@@ -13,13 +13,13 @@ protocol AppCoordinatorDelegate: AnyObject {
     func appCoordinatorDidFinish(_ coordinator: AppCoordinator)
 }
 
-
 /** The application's root `Coordinator`. */
 final class AppCoordinator: CoordinatorPresentable {
-    
+    // MARK: - Properties
     var childCoordinators: [Coordinator] = []
     var rootViewController = UIViewController()
     
+    // MARK: - Funcs
     init(window: UIWindow) {
         self.rootViewController.view.backgroundColor = .white
         window.rootViewController = rootViewController
@@ -36,7 +36,7 @@ final class AppCoordinator: CoordinatorPresentable {
 
 // MARK: - FruitsList Coordinator Delegate
 extension AppCoordinator: FruitsCoordinatorDelegate {
-    func FruitsListCoordinatorDidFinish(_ coordinator: FruitsCoordinator) {
+    func fruitsListCoordinatorDidFinish(_ coordinator: FruitsCoordinator) {
         
     }
 }

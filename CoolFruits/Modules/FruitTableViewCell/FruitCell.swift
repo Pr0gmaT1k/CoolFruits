@@ -5,32 +5,21 @@
 //  Created by Luis Alejandro Zapata Gonzalez on 19-07-22.
 //
 
-import Foundation
 import UIKit
+import Reusable
 
-public class FruitCell: UITableViewCell {
+// MARK: - Class
+final class FruitCell: UITableViewCell, NibReusable {
+    // MARK: - IBOutlets
     @IBOutlet weak var fruitNameLabel: UILabel!
     @IBOutlet weak var fruitSugarLabel: UILabel!
-    public override func awakeFromNib() {
-        super.awakeFromNib()
-    }
     
-    public func setUp(fruitName: String?, fruitSugar: Double?, isCitrus: Bool) {
-        guard let fruitName = fruitName else {
-            return
-        }
-
-        guard let fruitSugar = fruitSugar else {
-            return
-        }
-
-        fruitNameLabel.text = "\(isCitrus ? " * " : "") \(fruitName)"
-        fruitSugarLabel.text = "(Sugar:" + String(fruitSugar) + ")"
-    }
-    
-    class func createCell() -> FruitCell? {
-        let nib = UINib(nibName: "FruitCell", bundle: nil)
-        let cell = nib.instantiate(withOwner: self, options: nil).last as? FruitCell
-        return cell
+    // MARK: - funcs
+    public func fill(fruit: FruitModel?) {
+        guard let fruit = fruit,
+        let name = fruit.name,
+        let sugar = fruit.nutritions?.sugar else { return }
+        fruitNameLabel.text = "\(fruit.isCitrus ? " * " : "") \(name)"
+        fruitSugarLabel.text = "(Sugar:" + String(sugar) + ")"
     }
 }

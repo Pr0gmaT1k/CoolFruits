@@ -16,9 +16,7 @@ struct Deeplink {
 }
 
 enum Deeplinkable {
-    case saved
-    case lines
-    case stops
+    case details
 }
 
 ///  The most basic type of `Deeplink`: Manage the deeplinkink.
