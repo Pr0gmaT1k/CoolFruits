@@ -16,6 +16,7 @@ protocol AppCoordinatorDelegate: AnyObject {
 /** The application's root `Coordinator`. */
 final class AppCoordinator: CoordinatorPresentable {
     // MARK: - Properties
+    weak var delegate: AppCoordinatorDelegate?
     var childCoordinators: [Coordinator] = []
     var rootViewController = UIViewController()
     
@@ -37,6 +38,7 @@ final class AppCoordinator: CoordinatorPresentable {
 // MARK: - FruitsList Coordinator Delegate
 extension AppCoordinator: FruitsCoordinatorDelegate {
     func fruitsListCoordinatorDidFinish(_ coordinator: FruitsCoordinator) {
-        
+        removeChildCoordinator(coordinator)
+        delegate?.appCoordinatorDidFinish(self)
     }
 }
