@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FruitsListVC" customModule="CoolFruits" customModuleProvider="target">
+            <connections>
+                <outlet property="fruitsTableView" destination="EGJ-oa-b9f" id="VjC-oy-Iql"/>
+                <outlet property="searchBar" destination="g7w-Ij-bmJ" id="TZR-bT-ahi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EGJ-oa-b9f">
+                    <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                </tableView>
+                <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g7w-Ij-bmJ">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="vMc-uQ-D1G"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="N8v-YX-Czs"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="EGJ-oa-b9f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2eD-31-bxE"/>
+                <constraint firstItem="EGJ-oa-b9f" firstAttribute="top" secondItem="g7w-Ij-bmJ" secondAttribute="bottom" id="45N-Lj-7Jr"/>
+                <constraint firstItem="g7w-Ij-bmJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="J6A-4p-u2t"/>
+                <constraint firstItem="g7w-Ij-bmJ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="POn-o7-gMy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EGJ-oa-b9f" secondAttribute="trailing" id="Q7P-8n-0M4"/>
+                <constraint firstAttribute="bottom" secondItem="EGJ-oa-b9f" secondAttribute="bottom" id="fV7-d7-ZDZ"/>
+                <constraint firstItem="g7w-Ij-bmJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wB9-5D-X6I"/>
+            </constraints>
+            <point key="canvasLocation" x="100" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

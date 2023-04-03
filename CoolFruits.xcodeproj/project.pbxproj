@@ -7,45 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67C5536A8A6F42804077A575 /* Pods_CoolFruits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68E5F68D43EC7FEA8FB5E6E /* Pods_CoolFruits.framework */; };
 		9D15A43228877F7600896AC4 /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15A43128877F7600896AC4 /* FruitCell.swift */; };
 		9D15A43428877FBE00896AC4 /* FruitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D15A43328877FBE00896AC4 /* FruitCell.xib */; };
-		9D15A4372887884300896AC4 /* FruitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15A4362887884300896AC4 /* FruitDetailViewController.swift */; };
-		9D15A4392887884F00896AC4 /* FruitDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D15A4382887884F00896AC4 /* FruitDetailViewController.xib */; };
 		9D15A43C2887896500896AC4 /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15A43B2887896500896AC4 /* FruitModel.swift */; };
 		9D6DC7E0287E1E0300D96A6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DC7DF287E1E0300D96A6D /* AppDelegate.swift */; };
-		9D6DC7E2287E1E0300D96A6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DC7E1287E1E0300D96A6D /* SceneDelegate.swift */; };
-		9D6DC7E4287E1E0300D96A6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DC7E3287E1E0300D96A6D /* ViewController.swift */; };
-		9D6DC7E7287E1E0300D96A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6DC7E5287E1E0300D96A6D /* Main.storyboard */; };
 		9D6DC7E9287E1E0600D96A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6DC7E8287E1E0600D96A6D /* Assets.xcassets */; };
-		9D6DC7EC287E1E0600D96A6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6DC7EA287E1E0600D96A6D /* LaunchScreen.storyboard */; };
-		9DA2B08F288984FD00C8EC03 /* FruitDetailCitrusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2B08E288984FD00C8EC03 /* FruitDetailCitrusViewController.swift */; };
-		9DA2B0912889850E00C8EC03 /* FruitDetailCitrusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2B0902889850E00C8EC03 /* FruitDetailCitrusViewController.xib */; };
-		9DA2B0932889883E00C8EC03 /* SelectedFruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2B0922889883E00C8EC03 /* SelectedFruit.swift */; };
 		9DA2B0952889886000C8EC03 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2B0942889886000C8EC03 /* RequestManager.swift */; };
+		BA302A0229DAA19C003BE961 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A0129DAA19C003BE961 /* LoaderView.swift */; };
+		BA302A1329DB2D95003BE961 /* LoaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1229DB2D95003BE961 /* LoaderViewTests.swift */; };
+		BA302A1C29DB2DDE003BE961 /* TopLevelUIUtilities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA302A1529DB2DDE003BE961 /* TopLevelUIUtilities.storyboard */; };
+		BA302A1D29DB2DDE003BE961 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1629DB2DDE003BE961 /* Duration.swift */; };
+		BA302A1E29DB2DDE003BE961 /* FulfillableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1729DB2DDE003BE961 /* FulfillableViewController.swift */; };
+		BA302A1F29DB2DDE003BE961 /* EquatableExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1829DB2DDE003BE961 /* EquatableExpectation.swift */; };
+		BA302A2029DB2DDE003BE961 /* TopLevelUIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1929DB2DDE003BE961 /* TopLevelUIUtilities.swift */; };
+		BA302A2129DB2DDE003BE961 /* XCTestCase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1A29DB2DDE003BE961 /* XCTestCase+Utils.swift */; };
+		BA302A2229DB2DDE003BE961 /* XCTest+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1B29DB2DDE003BE961 /* XCTest+Utils.swift */; };
+		BA302A2629DB2F38003BE961 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A2529DB2F38003BE961 /* AppCoordinatorTests.swift */; };
+		BA302A2829DB2F52003BE961 /* FruitsListCoordinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A2729DB2F52003BE961 /* FruitsListCoordinationTests.swift */; };
+		BA302A2A29DB2F62003BE961 /* FruitsListVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A2929DB2F62003BE961 /* FruitsListVCTests.swift */; };
+		BA302A2C29DB2F71003BE961 /* FruitDetailsVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A2B29DB2F71003BE961 /* FruitDetailsVCTests.swift */; };
+		BA302A3029DB2F9B003BE961 /* FruitsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A2F29DB2F9B003BE961 /* FruitsListPresenter.swift */; };
+		BA302A3129DB39CF003BE961 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25AE29D7E5AA002631CD /* Navigator.swift */; };
+		BACF25A629D7E2E2002631CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACF25A229D7E2E2002631CD /* LaunchScreen.storyboard */; };
+		BACF25AF29D7E5AA002631CD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25AC29D7E5AA002631CD /* AppCoordinator.swift */; };
+		BACF25B029D7E5AA002631CD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25AD29D7E5AA002631CD /* Coordinator.swift */; };
+		BACF25B329D7E665002631CD /* FruitsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25B229D7E665002631CD /* FruitsListCoordinator.swift */; };
+		BACF25BE29D7ED7E002631CD /* FruitsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25BC29D7ED7E002631CD /* FruitsListVC.swift */; };
+		BACF25BF29D7ED7E002631CD /* FruitsListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BACF25BD29D7ED7E002631CD /* FruitsListVC.xib */; };
+		BACF25C229D7F563002631CD /* FruitDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25C029D7F563002631CD /* FruitDetailsVC.swift */; };
+		BACF25C329D7F563002631CD /* FruitDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BACF25C129D7F563002631CD /* FruitDetailsVC.xib */; };
+		BACF25C929D8794E002631CD /* FruitsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25C829D8794E002631CD /* FruitsListPresenter.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA302A0C29DB2A89003BE961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D6DC7D4287E1E0300D96A6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D6DC7DB287E1E0300D96A6D;
+			remoteInfo = CoolFruits;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9D15A43128877F7600896AC4 /* FruitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
 		9D15A43328877FBE00896AC4 /* FruitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitCell.xib; sourceTree = "<group>"; };
-		9D15A4362887884300896AC4 /* FruitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailViewController.swift; sourceTree = "<group>"; };
-		9D15A4382887884F00896AC4 /* FruitDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitDetailViewController.xib; sourceTree = "<group>"; };
 		9D15A43B2887896500896AC4 /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
 		9D6DC7DC287E1E0300D96A6D /* CoolFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6DC7DF287E1E0300D96A6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D6DC7E1287E1E0300D96A6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9D6DC7E3287E1E0300D96A6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9D6DC7E6287E1E0300D96A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D6DC7E8287E1E0600D96A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D6DC7EB287E1E0600D96A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6DC7ED287E1E0600D96A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DA2B08E288984FD00C8EC03 /* FruitDetailCitrusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailCitrusViewController.swift; sourceTree = "<group>"; };
-		9DA2B0902889850E00C8EC03 /* FruitDetailCitrusViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitDetailCitrusViewController.xib; sourceTree = "<group>"; };
-		9DA2B0922889883E00C8EC03 /* SelectedFruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFruit.swift; sourceTree = "<group>"; };
 		9DA2B0942889886000C8EC03 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		BA302A0129DAA19C003BE961 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		BA302A0829DB2A89003BE961 /* CoolFruitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolFruitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA302A1229DB2D95003BE961 /* LoaderViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewTests.swift; sourceTree = "<group>"; };
+		BA302A1529DB2DDE003BE961 /* TopLevelUIUtilities.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopLevelUIUtilities.storyboard; sourceTree = "<group>"; };
+		BA302A1629DB2DDE003BE961 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		BA302A1729DB2DDE003BE961 /* FulfillableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FulfillableViewController.swift; sourceTree = "<group>"; };
+		BA302A1829DB2DDE003BE961 /* EquatableExpectation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableExpectation.swift; sourceTree = "<group>"; };
+		BA302A1929DB2DDE003BE961 /* TopLevelUIUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopLevelUIUtilities.swift; sourceTree = "<group>"; };
+		BA302A1A29DB2DDE003BE961 /* XCTestCase+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Utils.swift"; sourceTree = "<group>"; };
+		BA302A1B29DB2DDE003BE961 /* XCTest+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+Utils.swift"; sourceTree = "<group>"; };
+		BA302A2529DB2F38003BE961 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
+		BA302A2729DB2F52003BE961 /* FruitsListCoordinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListCoordinationTests.swift; sourceTree = "<group>"; };
+		BA302A2929DB2F62003BE961 /* FruitsListVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListVCTests.swift; sourceTree = "<group>"; };
+		BA302A2B29DB2F71003BE961 /* FruitDetailsVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsVCTests.swift; sourceTree = "<group>"; };
+		BA302A2F29DB2F9B003BE961 /* FruitsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListPresenter.swift; sourceTree = "<group>"; };
+		BACF25A329D7E2E2002631CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BACF25AC29D7E5AA002631CD /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		BACF25AD29D7E5AA002631CD /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BACF25AE29D7E5AA002631CD /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		BACF25B229D7E665002631CD /* FruitsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListCoordinator.swift; sourceTree = "<group>"; };
+		BACF25BC29D7ED7E002631CD /* FruitsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListVC.swift; sourceTree = "<group>"; };
+		BACF25BD29D7ED7E002631CD /* FruitsListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitsListVC.xib; sourceTree = "<group>"; };
+		BACF25C029D7F563002631CD /* FruitDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsVC.swift; sourceTree = "<group>"; };
+		BACF25C129D7F563002631CD /* FruitDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitDetailsVC.xib; sourceTree = "<group>"; };
+		BACF25C829D8794E002631CD /* FruitsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListPresenter.swift; sourceTree = "<group>"; };
+		C5C4D480546C8DB62634B414 /* Pods-CoolFruits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolFruits.debug.xcconfig"; path = "Target Support Files/Pods-CoolFruits/Pods-CoolFruits.debug.xcconfig"; sourceTree = "<group>"; };
+		C68E5F68D43EC7FEA8FB5E6E /* Pods_CoolFruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolFruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2A4CE248DD4E59E4206659 /* Pods-CoolFruits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolFruits.release.xcconfig"; path = "Target Support Files/Pods-CoolFruits/Pods-CoolFruits.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9D6DC7D9287E1E0300D96A6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C5536A8A6F42804077A575 /* Pods_CoolFruits.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA302A0529DB2A89003BE961 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,31 +108,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9D15A43028877F5A00896AC4 /* TableView */ = {
+		98B83AEA9A448DCB3C707838 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4D480546C8DB62634B414 /* Pods-CoolFruits.debug.xcconfig */,
+				CB2A4CE248DD4E59E4206659 /* Pods-CoolFruits.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D15A43028877F5A00896AC4 /* FruitTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				9D15A43128877F7600896AC4 /* FruitCell.swift */,
 				9D15A43328877FBE00896AC4 /* FruitCell.xib */,
 			);
-			path = TableView;
-			sourceTree = "<group>";
-		};
-		9D15A4352887882E00896AC4 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				9D15A4362887884300896AC4 /* FruitDetailViewController.swift */,
-				9D15A4382887884F00896AC4 /* FruitDetailViewController.xib */,
-				9DA2B08E288984FD00C8EC03 /* FruitDetailCitrusViewController.swift */,
-				9DA2B0902889850E00C8EC03 /* FruitDetailCitrusViewController.xib */,
-			);
-			path = Details;
+			path = FruitTableViewCell;
 			sourceTree = "<group>";
 		};
 		9D15A43A2887895500896AC4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				9D15A43B2887896500896AC4 /* FruitModel.swift */,
-				9DA2B0922889883E00C8EC03 /* SelectedFruit.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -88,7 +138,10 @@
 			isa = PBXGroup;
 			children = (
 				9D6DC7DE287E1E0300D96A6D /* CoolFruits */,
+				BA302A0929DB2A89003BE961 /* CoolFruitsTests */,
 				9D6DC7DD287E1E0300D96A6D /* Products */,
+				98B83AEA9A448DCB3C707838 /* Pods */,
+				A59471C027013E48BA1FDC95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				9D6DC7DC287E1E0300D96A6D /* CoolFruits.app */,
+				BA302A0829DB2A89003BE961 /* CoolFruitsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,19 +157,181 @@
 		9D6DC7DE287E1E0300D96A6D /* CoolFruits */ = {
 			isa = PBXGroup;
 			children = (
-				9D15A43A2887895500896AC4 /* Model */,
-				9D15A4352887882E00896AC4 /* Details */,
-				9D15A43028877F5A00896AC4 /* TableView */,
 				9D6DC7DF287E1E0300D96A6D /* AppDelegate.swift */,
-				9D6DC7E1287E1E0300D96A6D /* SceneDelegate.swift */,
-				9D6DC7E3287E1E0300D96A6D /* ViewController.swift */,
-				9DA2B0942889886000C8EC03 /* RequestManager.swift */,
-				9D6DC7E5287E1E0300D96A6D /* Main.storyboard */,
-				9D6DC7E8287E1E0600D96A6D /* Assets.xcassets */,
-				9D6DC7EA287E1E0600D96A6D /* LaunchScreen.storyboard */,
-				9D6DC7ED287E1E0600D96A6D /* Info.plist */,
+				BAAC99A729D7E0C500AF535F /* Modules */,
+				BACF25AB29D7E5AA002631CD /* Coordination */,
+				9D15A43A2887895500896AC4 /* Model */,
+				BACF25A829D7E2FE002631CD /* Services */,
+				BACF25A129D7E27A002631CD /* Ressources */,
+				BACF25AA29D7E37D002631CD /* Extensions */,
+				BACF25A929D7E376002631CD /* Commons */,
 			);
 			path = CoolFruits;
+			sourceTree = "<group>";
+		};
+		A59471C027013E48BA1FDC95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C68E5F68D43EC7FEA8FB5E6E /* Pods_CoolFruits.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA302A0329DAA623003BE961 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BACF25AD29D7E5AA002631CD /* Coordinator.swift */,
+				BACF25AE29D7E5AA002631CD /* Navigator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BA302A0929DB2A89003BE961 /* CoolFruitsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A2429DB2F27003BE961 /* Coordination */,
+				BA302A2329DB2F1F003BE961 /* Modules */,
+				BA302A1429DB2DAD003BE961 /* Helpers */,
+				BA302A1129DB2D7D003BE961 /* Commons */,
+			);
+			path = CoolFruitsTests;
+			sourceTree = "<group>";
+		};
+		BA302A1129DB2D7D003BE961 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A1229DB2D95003BE961 /* LoaderViewTests.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		BA302A1429DB2DAD003BE961 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A1629DB2DDE003BE961 /* Duration.swift */,
+				BA302A1829DB2DDE003BE961 /* EquatableExpectation.swift */,
+				BA302A1729DB2DDE003BE961 /* FulfillableViewController.swift */,
+				BA302A1529DB2DDE003BE961 /* TopLevelUIUtilities.storyboard */,
+				BA302A1929DB2DDE003BE961 /* TopLevelUIUtilities.swift */,
+				BA302A1B29DB2DDE003BE961 /* XCTest+Utils.swift */,
+				BA302A1A29DB2DDE003BE961 /* XCTestCase+Utils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BA302A2329DB2F1F003BE961 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A2E29DB2F85003BE961 /* FruitDetails */,
+				BA302A2D29DB2F7C003BE961 /* FruitsList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BA302A2429DB2F27003BE961 /* Coordination */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A2529DB2F38003BE961 /* AppCoordinatorTests.swift */,
+				BA302A2729DB2F52003BE961 /* FruitsListCoordinationTests.swift */,
+			);
+			path = Coordination;
+			sourceTree = "<group>";
+		};
+		BA302A2D29DB2F7C003BE961 /* FruitsList */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A2929DB2F62003BE961 /* FruitsListVCTests.swift */,
+				BA302A2F29DB2F9B003BE961 /* FruitsListPresenter.swift */,
+			);
+			path = FruitsList;
+			sourceTree = "<group>";
+		};
+		BA302A2E29DB2F85003BE961 /* FruitDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A2B29DB2F71003BE961 /* FruitDetailsVCTests.swift */,
+			);
+			path = FruitDetails;
+			sourceTree = "<group>";
+		};
+		BAAC99A729D7E0C500AF535F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9D15A43028877F5A00896AC4 /* FruitTableViewCell */,
+				BACF25A029D7E262002631CD /* FruitsList */,
+				BACF259329D7E119002631CD /* FruitDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BACF259329D7E119002631CD /* FruitDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BACF259729D7E119002631CD /* FruitDetailsVC */,
+			);
+			path = FruitDetails;
+			sourceTree = "<group>";
+		};
+		BACF259729D7E119002631CD /* FruitDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				BACF25C029D7F563002631CD /* FruitDetailsVC.swift */,
+				BACF25C129D7F563002631CD /* FruitDetailsVC.xib */,
+			);
+			path = FruitDetailsVC;
+			sourceTree = "<group>";
+		};
+		BACF25A029D7E262002631CD /* FruitsList */ = {
+			isa = PBXGroup;
+			children = (
+				BACF25C829D8794E002631CD /* FruitsListPresenter.swift */,
+				BACF25BC29D7ED7E002631CD /* FruitsListVC.swift */,
+				BACF25BD29D7ED7E002631CD /* FruitsListVC.xib */,
+			);
+			path = FruitsList;
+			sourceTree = "<group>";
+		};
+		BACF25A129D7E27A002631CD /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				BACF25A229D7E2E2002631CD /* LaunchScreen.storyboard */,
+				9D6DC7ED287E1E0600D96A6D /* Info.plist */,
+				9D6DC7E8287E1E0600D96A6D /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		BACF25A829D7E2FE002631CD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2B0942889886000C8EC03 /* RequestManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BACF25A929D7E376002631CD /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A0129DAA19C003BE961 /* LoaderView.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		BACF25AA29D7E37D002631CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BACF25AB29D7E5AA002631CD /* Coordination */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A0329DAA623003BE961 /* Base */,
+				BACF25AC29D7E5AA002631CD /* AppCoordinator.swift */,
+				BACF25B229D7E665002631CD /* FruitsListCoordinator.swift */,
+			);
+			path = Coordination;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +341,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D6DC7F0287E1E0600D96A6D /* Build configuration list for PBXNativeTarget "CoolFruits" */;
 			buildPhases = (
+				FAAF75289B774FC208E6CB16 /* [CP] Check Pods Manifest.lock */,
 				9D6DC7D8287E1E0300D96A6D /* Sources */,
 				9D6DC7D9287E1E0300D96A6D /* Frameworks */,
 				9D6DC7DA287E1E0300D96A6D /* Resources */,
+				05D472C42724A01CB99ABBD2 /* [CP] Embed Pods Frameworks */,
+				BA3029FF29DA932B003BE961 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -138,6 +357,24 @@
 			productReference = 9D6DC7DC287E1E0300D96A6D /* CoolFruits.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BA302A0729DB2A89003BE961 /* CoolFruitsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA302A0E29DB2A89003BE961 /* Build configuration list for PBXNativeTarget "CoolFruitsTests" */;
+			buildPhases = (
+				BA302A0429DB2A89003BE961 /* Sources */,
+				BA302A0529DB2A89003BE961 /* Frameworks */,
+				BA302A0629DB2A89003BE961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA302A0D29DB2A89003BE961 /* PBXTargetDependency */,
+			);
+			name = CoolFruitsTests;
+			productName = CoolFruitsTests;
+			productReference = BA302A0829DB2A89003BE961 /* CoolFruitsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,11 +382,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					9D6DC7DB287E1E0300D96A6D = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					BA302A0729DB2A89003BE961 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+						TestTargetID = 9D6DC7DB287E1E0300D96A6D;
 					};
 				};
 			};
@@ -167,6 +409,7 @@
 			projectRoot = "";
 			targets = (
 				9D6DC7DB287E1E0300D96A6D /* CoolFruits */,
+				BA302A0729DB2A89003BE961 /* CoolFruitsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -176,16 +419,84 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D15A4392887884F00896AC4 /* FruitDetailViewController.xib in Resources */,
+				BACF25C329D7F563002631CD /* FruitDetailsVC.xib in Resources */,
 				9D15A43428877FBE00896AC4 /* FruitCell.xib in Resources */,
-				9D6DC7EC287E1E0600D96A6D /* LaunchScreen.storyboard in Resources */,
+				BACF25A629D7E2E2002631CD /* LaunchScreen.storyboard in Resources */,
 				9D6DC7E9287E1E0600D96A6D /* Assets.xcassets in Resources */,
-				9D6DC7E7287E1E0300D96A6D /* Main.storyboard in Resources */,
-				9DA2B0912889850E00C8EC03 /* FruitDetailCitrusViewController.xib in Resources */,
+				BACF25BF29D7ED7E002631CD /* FruitsListVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA302A0629DB2A89003BE961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA302A1C29DB2DDE003BE961 /* TopLevelUIUtilities.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05D472C42724A01CB99ABBD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoolFruits/Pods-CoolFruits-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoolFruits/Pods-CoolFruits-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoolFruits/Pods-CoolFruits-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA3029FF29DA932B003BE961 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		FAAF75289B774FC208E6CB16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoolFruits-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D6DC7D8287E1E0300D96A6D /* Sources */ = {
@@ -193,32 +504,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D15A43228877F7600896AC4 /* FruitCell.swift in Sources */,
-				9DA2B0932889883E00C8EC03 /* SelectedFruit.swift in Sources */,
-				9D6DC7E4287E1E0300D96A6D /* ViewController.swift in Sources */,
+				BACF25AF29D7E5AA002631CD /* AppCoordinator.swift in Sources */,
+				BACF25BE29D7ED7E002631CD /* FruitsListVC.swift in Sources */,
+				BACF25C229D7F563002631CD /* FruitDetailsVC.swift in Sources */,
+				BA302A0229DAA19C003BE961 /* LoaderView.swift in Sources */,
+				BA302A3129DB39CF003BE961 /* Navigator.swift in Sources */,
+				BACF25B029D7E5AA002631CD /* Coordinator.swift in Sources */,
+				BACF25B329D7E665002631CD /* FruitsListCoordinator.swift in Sources */,
 				9D6DC7E0287E1E0300D96A6D /* AppDelegate.swift in Sources */,
-				9D6DC7E2287E1E0300D96A6D /* SceneDelegate.swift in Sources */,
 				9D15A43C2887896500896AC4 /* FruitModel.swift in Sources */,
+				BACF25C929D8794E002631CD /* FruitsListPresenter.swift in Sources */,
 				9DA2B0952889886000C8EC03 /* RequestManager.swift in Sources */,
-				9D15A4372887884300896AC4 /* FruitDetailViewController.swift in Sources */,
-				9DA2B08F288984FD00C8EC03 /* FruitDetailCitrusViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA302A0429DB2A89003BE961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA302A2229DB2DDE003BE961 /* XCTest+Utils.swift in Sources */,
+				BA302A2029DB2DDE003BE961 /* TopLevelUIUtilities.swift in Sources */,
+				BA302A1E29DB2DDE003BE961 /* FulfillableViewController.swift in Sources */,
+				BA302A2C29DB2F71003BE961 /* FruitDetailsVCTests.swift in Sources */,
+				BA302A2129DB2DDE003BE961 /* XCTestCase+Utils.swift in Sources */,
+				BA302A3029DB2F9B003BE961 /* FruitsListPresenter.swift in Sources */,
+				BA302A2629DB2F38003BE961 /* AppCoordinatorTests.swift in Sources */,
+				BA302A2A29DB2F62003BE961 /* FruitsListVCTests.swift in Sources */,
+				BA302A1F29DB2DDE003BE961 /* EquatableExpectation.swift in Sources */,
+				BA302A1329DB2D95003BE961 /* LoaderViewTests.swift in Sources */,
+				BA302A2829DB2F52003BE961 /* FruitsListCoordinationTests.swift in Sources */,
+				BA302A1D29DB2DDE003BE961 /* Duration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		9D6DC7E5287E1E0300D96A6D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D6DC7E6287E1E0300D96A6D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		BA302A0D29DB2A89003BE961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D6DC7DB287E1E0300D96A6D /* CoolFruits */;
+			targetProxy = BA302A0C29DB2A89003BE961 /* PBXContainerItemProxy */;
 		};
-		9D6DC7EA287E1E0600D96A6D /* LaunchScreen.storyboard */ = {
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BACF25A229D7E2E2002631CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9D6DC7EB287E1E0600D96A6D /* Base */,
+				BACF25A329D7E2E2002631CD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -342,19 +675,20 @@
 		};
 		9D6DC7F1287E1E0600D96A6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C4D480546C8DB62634B414 /* Pods-CoolFruits.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2F4PT43ZHJ;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoolFruits/Info.plist;
+				INFOPLIST_FILE = CoolFruits/Ressources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,27 +696,31 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.falabella.CoolFruits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9D6DC7F2287E1E0600D96A6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2A4CE248DD4E59E4206659 /* Pods-CoolFruits.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2F4PT43ZHJ;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoolFruits/Info.plist;
+				INFOPLIST_FILE = CoolFruits/Ressources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,9 +728,63 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.falabella.CoolFruits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BA302A0F29DB2A89003BE961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.falabella.CoolFruits.CoolFruitsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoolFruits.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoolFruits";
+			};
+			name = Debug;
+		};
+		BA302A1029DB2A89003BE961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.falabella.CoolFruits.CoolFruitsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoolFruits.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoolFruits";
 			};
 			name = Release;
 		};
@@ -413,6 +805,15 @@
 			buildConfigurations = (
 				9D6DC7F1287E1E0600D96A6D /* Debug */,
 				9D6DC7F2287E1E0600D96A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA302A0E29DB2A89003BE961 /* Build configuration list for PBXNativeTarget "CoolFruitsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA302A0F29DB2A89003BE961 /* Debug */,
+				BA302A1029DB2A89003BE961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
