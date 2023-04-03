@@ -15,10 +15,23 @@
 		9D6DC7E9287E1E0600D96A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6DC7E8287E1E0600D96A6D /* Assets.xcassets */; };
 		9DA2B0952889886000C8EC03 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2B0942889886000C8EC03 /* RequestManager.swift */; };
 		BA302A0229DAA19C003BE961 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A0129DAA19C003BE961 /* LoaderView.swift */; };
+		BA302A1329DB2D95003BE961 /* LoaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1229DB2D95003BE961 /* LoaderViewTests.swift */; };
+		BA302A1C29DB2DDE003BE961 /* TopLevelUIUtilities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA302A1529DB2DDE003BE961 /* TopLevelUIUtilities.storyboard */; };
+		BA302A1D29DB2DDE003BE961 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1629DB2DDE003BE961 /* Duration.swift */; };
+		BA302A1E29DB2DDE003BE961 /* FulfillableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1729DB2DDE003BE961 /* FulfillableViewController.swift */; };
+		BA302A1F29DB2DDE003BE961 /* EquatableExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1829DB2DDE003BE961 /* EquatableExpectation.swift */; };
+		BA302A2029DB2DDE003BE961 /* TopLevelUIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1929DB2DDE003BE961 /* TopLevelUIUtilities.swift */; };
+		BA302A2129DB2DDE003BE961 /* XCTestCase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1A29DB2DDE003BE961 /* XCTestCase+Utils.swift */; };
+		BA302A2229DB2DDE003BE961 /* XCTest+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A1B29DB2DDE003BE961 /* XCTest+Utils.swift */; };
+		BA302A2629DB2F38003BE961 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A2529DB2F38003BE961 /* AppCoordinatorTests.swift */; };
+		BA302A2829DB2F52003BE961 /* FruitsListCoordinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A2729DB2F52003BE961 /* FruitsListCoordinationTests.swift */; };
+		BA302A2A29DB2F62003BE961 /* FruitsListVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A2929DB2F62003BE961 /* FruitsListVCTests.swift */; };
+		BA302A2C29DB2F71003BE961 /* FruitDetailsVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A2B29DB2F71003BE961 /* FruitDetailsVCTests.swift */; };
+		BA302A3029DB2F9B003BE961 /* FruitsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA302A2F29DB2F9B003BE961 /* FruitsListPresenter.swift */; };
+		BA302A3129DB39CF003BE961 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25AE29D7E5AA002631CD /* Navigator.swift */; };
 		BACF25A629D7E2E2002631CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACF25A229D7E2E2002631CD /* LaunchScreen.storyboard */; };
 		BACF25AF29D7E5AA002631CD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25AC29D7E5AA002631CD /* AppCoordinator.swift */; };
 		BACF25B029D7E5AA002631CD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25AD29D7E5AA002631CD /* Coordinator.swift */; };
-		BACF25B129D7E5AA002631CD /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25AE29D7E5AA002631CD /* Navigator.swift */; };
 		BACF25B329D7E665002631CD /* FruitsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25B229D7E665002631CD /* FruitsListCoordinator.swift */; };
 		BACF25BE29D7ED7E002631CD /* FruitsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25BC29D7ED7E002631CD /* FruitsListVC.swift */; };
 		BACF25BF29D7ED7E002631CD /* FruitsListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BACF25BD29D7ED7E002631CD /* FruitsListVC.xib */; };
@@ -26,6 +39,16 @@
 		BACF25C329D7F563002631CD /* FruitDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BACF25C129D7F563002631CD /* FruitDetailsVC.xib */; };
 		BACF25C929D8794E002631CD /* FruitsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF25C829D8794E002631CD /* FruitsListPresenter.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA302A0C29DB2A89003BE961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D6DC7D4287E1E0300D96A6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D6DC7DB287E1E0300D96A6D;
+			remoteInfo = CoolFruits;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9D15A43128877F7600896AC4 /* FruitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
@@ -37,6 +60,20 @@
 		9D6DC7ED287E1E0600D96A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DA2B0942889886000C8EC03 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		BA302A0129DAA19C003BE961 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		BA302A0829DB2A89003BE961 /* CoolFruitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolFruitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA302A1229DB2D95003BE961 /* LoaderViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewTests.swift; sourceTree = "<group>"; };
+		BA302A1529DB2DDE003BE961 /* TopLevelUIUtilities.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopLevelUIUtilities.storyboard; sourceTree = "<group>"; };
+		BA302A1629DB2DDE003BE961 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		BA302A1729DB2DDE003BE961 /* FulfillableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FulfillableViewController.swift; sourceTree = "<group>"; };
+		BA302A1829DB2DDE003BE961 /* EquatableExpectation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableExpectation.swift; sourceTree = "<group>"; };
+		BA302A1929DB2DDE003BE961 /* TopLevelUIUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopLevelUIUtilities.swift; sourceTree = "<group>"; };
+		BA302A1A29DB2DDE003BE961 /* XCTestCase+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Utils.swift"; sourceTree = "<group>"; };
+		BA302A1B29DB2DDE003BE961 /* XCTest+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+Utils.swift"; sourceTree = "<group>"; };
+		BA302A2529DB2F38003BE961 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
+		BA302A2729DB2F52003BE961 /* FruitsListCoordinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListCoordinationTests.swift; sourceTree = "<group>"; };
+		BA302A2929DB2F62003BE961 /* FruitsListVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListVCTests.swift; sourceTree = "<group>"; };
+		BA302A2B29DB2F71003BE961 /* FruitDetailsVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsVCTests.swift; sourceTree = "<group>"; };
+		BA302A2F29DB2F9B003BE961 /* FruitsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListPresenter.swift; sourceTree = "<group>"; };
 		BACF25A329D7E2E2002631CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BACF25AC29D7E5AA002631CD /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		BACF25AD29D7E5AA002631CD /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -58,6 +95,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				67C5536A8A6F42804077A575 /* Pods_CoolFruits.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA302A0529DB2A89003BE961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				9D6DC7DE287E1E0300D96A6D /* CoolFruits */,
+				BA302A0929DB2A89003BE961 /* CoolFruitsTests */,
 				9D6DC7DD287E1E0300D96A6D /* Products */,
 				98B83AEA9A448DCB3C707838 /* Pods */,
 				A59471C027013E48BA1FDC95 /* Frameworks */,
@@ -104,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				9D6DC7DC287E1E0300D96A6D /* CoolFruits.app */,
+				BA302A0829DB2A89003BE961 /* CoolFruitsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +184,74 @@
 				BACF25AE29D7E5AA002631CD /* Navigator.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		BA302A0929DB2A89003BE961 /* CoolFruitsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A2429DB2F27003BE961 /* Coordination */,
+				BA302A2329DB2F1F003BE961 /* Modules */,
+				BA302A1429DB2DAD003BE961 /* Helpers */,
+				BA302A1129DB2D7D003BE961 /* Commons */,
+			);
+			path = CoolFruitsTests;
+			sourceTree = "<group>";
+		};
+		BA302A1129DB2D7D003BE961 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A1229DB2D95003BE961 /* LoaderViewTests.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		BA302A1429DB2DAD003BE961 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A1629DB2DDE003BE961 /* Duration.swift */,
+				BA302A1829DB2DDE003BE961 /* EquatableExpectation.swift */,
+				BA302A1729DB2DDE003BE961 /* FulfillableViewController.swift */,
+				BA302A1529DB2DDE003BE961 /* TopLevelUIUtilities.storyboard */,
+				BA302A1929DB2DDE003BE961 /* TopLevelUIUtilities.swift */,
+				BA302A1B29DB2DDE003BE961 /* XCTest+Utils.swift */,
+				BA302A1A29DB2DDE003BE961 /* XCTestCase+Utils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BA302A2329DB2F1F003BE961 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A2E29DB2F85003BE961 /* FruitDetails */,
+				BA302A2D29DB2F7C003BE961 /* FruitsList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BA302A2429DB2F27003BE961 /* Coordination */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A2529DB2F38003BE961 /* AppCoordinatorTests.swift */,
+				BA302A2729DB2F52003BE961 /* FruitsListCoordinationTests.swift */,
+			);
+			path = Coordination;
+			sourceTree = "<group>";
+		};
+		BA302A2D29DB2F7C003BE961 /* FruitsList */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A2929DB2F62003BE961 /* FruitsListVCTests.swift */,
+				BA302A2F29DB2F9B003BE961 /* FruitsListPresenter.swift */,
+			);
+			path = FruitsList;
+			sourceTree = "<group>";
+		};
+		BA302A2E29DB2F85003BE961 /* FruitDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BA302A2B29DB2F71003BE961 /* FruitDetailsVCTests.swift */,
+			);
+			path = FruitDetails;
 			sourceTree = "<group>";
 		};
 		BAAC99A729D7E0C500AF535F /* Modules */ = {
@@ -243,6 +357,24 @@
 			productReference = 9D6DC7DC287E1E0300D96A6D /* CoolFruits.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BA302A0729DB2A89003BE961 /* CoolFruitsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA302A0E29DB2A89003BE961 /* Build configuration list for PBXNativeTarget "CoolFruitsTests" */;
+			buildPhases = (
+				BA302A0429DB2A89003BE961 /* Sources */,
+				BA302A0529DB2A89003BE961 /* Frameworks */,
+				BA302A0629DB2A89003BE961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA302A0D29DB2A89003BE961 /* PBXTargetDependency */,
+			);
+			name = CoolFruitsTests;
+			productName = CoolFruitsTests;
+			productReference = BA302A0829DB2A89003BE961 /* CoolFruitsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,11 +382,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					9D6DC7DB287E1E0300D96A6D = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					BA302A0729DB2A89003BE961 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+						TestTargetID = 9D6DC7DB287E1E0300D96A6D;
 					};
 				};
 			};
@@ -272,6 +409,7 @@
 			projectRoot = "";
 			targets = (
 				9D6DC7DB287E1E0300D96A6D /* CoolFruits */,
+				BA302A0729DB2A89003BE961 /* CoolFruitsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +424,14 @@
 				BACF25A629D7E2E2002631CD /* LaunchScreen.storyboard in Resources */,
 				9D6DC7E9287E1E0600D96A6D /* Assets.xcassets in Resources */,
 				BACF25BF29D7ED7E002631CD /* FruitsListVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA302A0629DB2A89003BE961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA302A1C29DB2DDE003BE961 /* TopLevelUIUtilities.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,8 +507,8 @@
 				BACF25AF29D7E5AA002631CD /* AppCoordinator.swift in Sources */,
 				BACF25BE29D7ED7E002631CD /* FruitsListVC.swift in Sources */,
 				BACF25C229D7F563002631CD /* FruitDetailsVC.swift in Sources */,
-				BACF25B129D7E5AA002631CD /* Navigator.swift in Sources */,
 				BA302A0229DAA19C003BE961 /* LoaderView.swift in Sources */,
+				BA302A3129DB39CF003BE961 /* Navigator.swift in Sources */,
 				BACF25B029D7E5AA002631CD /* Coordinator.swift in Sources */,
 				BACF25B329D7E665002631CD /* FruitsListCoordinator.swift in Sources */,
 				9D6DC7E0287E1E0300D96A6D /* AppDelegate.swift in Sources */,
@@ -372,7 +518,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA302A0429DB2A89003BE961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA302A2229DB2DDE003BE961 /* XCTest+Utils.swift in Sources */,
+				BA302A2029DB2DDE003BE961 /* TopLevelUIUtilities.swift in Sources */,
+				BA302A1E29DB2DDE003BE961 /* FulfillableViewController.swift in Sources */,
+				BA302A2C29DB2F71003BE961 /* FruitDetailsVCTests.swift in Sources */,
+				BA302A2129DB2DDE003BE961 /* XCTestCase+Utils.swift in Sources */,
+				BA302A3029DB2F9B003BE961 /* FruitsListPresenter.swift in Sources */,
+				BA302A2629DB2F38003BE961 /* AppCoordinatorTests.swift in Sources */,
+				BA302A2A29DB2F62003BE961 /* FruitsListVCTests.swift in Sources */,
+				BA302A1F29DB2DDE003BE961 /* EquatableExpectation.swift in Sources */,
+				BA302A1329DB2D95003BE961 /* LoaderViewTests.swift in Sources */,
+				BA302A2829DB2F52003BE961 /* FruitsListCoordinationTests.swift in Sources */,
+				BA302A1D29DB2DDE003BE961 /* Duration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA302A0D29DB2A89003BE961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D6DC7DB287E1E0300D96A6D /* CoolFruits */;
+			targetProxy = BA302A0C29DB2A89003BE961 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BACF25A229D7E2E2002631CD /* LaunchScreen.storyboard */ = {
@@ -508,7 +681,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2F4PT43ZHJ;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoolFruits/Ressources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -540,7 +713,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2F4PT43ZHJ;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoolFruits/Ressources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -564,6 +737,57 @@
 			};
 			name = Release;
 		};
+		BA302A0F29DB2A89003BE961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.falabella.CoolFruits.CoolFruitsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoolFruits.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoolFruits";
+			};
+			name = Debug;
+		};
+		BA302A1029DB2A89003BE961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.falabella.CoolFruits.CoolFruitsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoolFruits.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoolFruits";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,6 +805,15 @@
 			buildConfigurations = (
 				9D6DC7F1287E1E0600D96A6D /* Debug */,
 				9D6DC7F2287E1E0600D96A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA302A0E29DB2A89003BE961 /* Build configuration list for PBXNativeTarget "CoolFruitsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA302A0F29DB2A89003BE961 /* Debug */,
+				BA302A1029DB2A89003BE961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

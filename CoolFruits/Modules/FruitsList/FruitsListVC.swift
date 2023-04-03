@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: - Delegate
 protocol FruitsListVCDelegate: AnyObject {
-    func didSelect(fruit: FruitModel)
+    func didSelect(fruit: FruitModel, animated: Bool)
 }
 
 // MARK: - Displayable
@@ -41,7 +41,7 @@ class FruitsListVC: UIViewController, FruitsListDisplayable {
 // MARK: - UITableViewDelegate
 extension FruitsListVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let fruit = presenter.fruits?[indexPath.row] else { return }
-        delegate?.didSelect(fruit: fruit)
+        guard let fruit = presenter.displayedFruits?[indexPath.row] else { return }
+        delegate?.didSelect(fruit: fruit, animated: true)
     }
 }

@@ -32,9 +32,9 @@ final class FruitsCoordinator: CoordinatorPresentable {
 
 // MARK: - FruitslistVC Delegate
 extension FruitsCoordinator: FruitsListVCDelegate {
-    func didSelect(fruit: FruitModel) {
+    func didSelect(fruit: FruitModel, animated: Bool) {
         let vc = FruitDetailsVC()
         vc.fruit = fruit
-        rootViewController.present(vc, animated: true)
+        rootViewController.present(vc, animated: animated)
     }
 }
