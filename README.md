@@ -31,7 +31,6 @@ Dont forget to clone the corresponding branch.
 
 Dependencies:
 -----------------
-## Networking:
 
 ## Model & Decode:
 * **[Codable](https://developer.apple.com/documentation/swift/codable):** A type that can convert itself into and out of an external representation.
