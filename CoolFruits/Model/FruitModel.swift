@@ -11,9 +11,6 @@ struct FruitModel: Codable {
     var genus, name, family, order: String?
     var id: Int?
     var nutritions: NutritionsModel?
-    var isCitrus: Bool {
-        return genus == "Citrus"
-    }
 }
 
 struct NutritionsModel: Codable {

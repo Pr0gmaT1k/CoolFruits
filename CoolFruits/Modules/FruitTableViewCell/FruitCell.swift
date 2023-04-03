@@ -19,7 +19,7 @@ final class FruitCell: UITableViewCell, NibReusable {
         guard let fruit = fruit,
         let name = fruit.name,
         let sugar = fruit.nutritions?.sugar else { return }
-        fruitNameLabel.text = "\(fruit.isCitrus ? " * " : "") \(name)"
+        fruitNameLabel.text = name
         fruitSugarLabel.text = "(Sugar:" + String(sugar) + ")"
     }
 }
