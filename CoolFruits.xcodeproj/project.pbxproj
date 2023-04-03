@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67C5536A8A6F42804077A575 /* Pods_CoolFruits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68E5F68D43EC7FEA8FB5E6E /* Pods_CoolFruits.framework */; };
 		9D15A43228877F7600896AC4 /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15A43128877F7600896AC4 /* FruitCell.swift */; };
 		9D15A43428877FBE00896AC4 /* FruitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D15A43328877FBE00896AC4 /* FruitCell.xib */; };
 		9D15A43C2887896500896AC4 /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15A43B2887896500896AC4 /* FruitModel.swift */; };
@@ -44,6 +45,9 @@
 		BACF25C029D7F563002631CD /* FruitDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsVC.swift; sourceTree = "<group>"; };
 		BACF25C129D7F563002631CD /* FruitDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitDetailsVC.xib; sourceTree = "<group>"; };
 		BACF25C829D8794E002631CD /* FruitsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListPresenter.swift; sourceTree = "<group>"; };
+		C5C4D480546C8DB62634B414 /* Pods-CoolFruits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolFruits.debug.xcconfig"; path = "Target Support Files/Pods-CoolFruits/Pods-CoolFruits.debug.xcconfig"; sourceTree = "<group>"; };
+		C68E5F68D43EC7FEA8FB5E6E /* Pods_CoolFruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolFruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2A4CE248DD4E59E4206659 /* Pods-CoolFruits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolFruits.release.xcconfig"; path = "Target Support Files/Pods-CoolFruits/Pods-CoolFruits.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,12 +55,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67C5536A8A6F42804077A575 /* Pods_CoolFruits.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98B83AEA9A448DCB3C707838 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4D480546C8DB62634B414 /* Pods-CoolFruits.debug.xcconfig */,
+				CB2A4CE248DD4E59E4206659 /* Pods-CoolFruits.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9D15A43028877F5A00896AC4 /* FruitTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +93,8 @@
 			children = (
 				9D6DC7DE287E1E0300D96A6D /* CoolFruits */,
 				9D6DC7DD287E1E0300D96A6D /* Products */,
+				98B83AEA9A448DCB3C707838 /* Pods */,
+				A59471C027013E48BA1FDC95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +119,14 @@
 				BACF25A929D7E376002631CD /* Commons */,
 			);
 			path = CoolFruits;
+			sourceTree = "<group>";
+		};
+		A59471C027013E48BA1FDC95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C68E5F68D43EC7FEA8FB5E6E /* Pods_CoolFruits.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BAAC99A729D7E0C500AF535F /* Modules */ = {
@@ -192,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D6DC7F0287E1E0600D96A6D /* Build configuration list for PBXNativeTarget "CoolFruits" */;
 			buildPhases = (
+				FAAF75289B774FC208E6CB16 /* [CP] Check Pods Manifest.lock */,
 				9D6DC7D8287E1E0300D96A6D /* Sources */,
 				9D6DC7D9287E1E0300D96A6D /* Frameworks */,
 				9D6DC7DA287E1E0300D96A6D /* Resources */,
+				05D472C42724A01CB99ABBD2 /* [CP] Embed Pods Frameworks */,
+				BA3029FF29DA932B003BE961 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05D472C42724A01CB99ABBD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoolFruits/Pods-CoolFruits-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoolFruits/Pods-CoolFruits-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoolFruits/Pods-CoolFruits-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA3029FF29DA932B003BE961 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		FAAF75289B774FC208E6CB16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoolFruits-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D6DC7D8287E1E0300D96A6D /* Sources */ = {
@@ -402,6 +490,7 @@
 		};
 		9D6DC7F1287E1E0600D96A6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C4D480546C8DB62634B414 /* Pods-CoolFruits.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -433,6 +522,7 @@
 		};
 		9D6DC7F2287E1E0600D96A6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2A4CE248DD4E59E4206659 /* Pods-CoolFruits.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

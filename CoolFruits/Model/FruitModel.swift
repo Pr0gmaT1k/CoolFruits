@@ -8,14 +8,15 @@
 import Foundation
 
 struct FruitModel: Codable {
-    var genus, name: String?
+    var genus, name, family, order: String?
     var id: Int?
-    var family, order: String?
     var nutritions: NutritionsModel?
+    var isCitrus: Bool {
+        return genus == "Citrus"
+    }
 }
 
 struct NutritionsModel: Codable {
-    var carbohydrates, protein, fat: Double?
+    var sugar, carbohydrates, protein, fat: Double?
     var calories: Int?
-    var sugar: Double?
 }

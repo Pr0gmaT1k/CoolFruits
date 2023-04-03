@@ -1,0 +1,24 @@
+PODS:
+  - Reusable (4.1.2):
+    - Reusable/Storyboard (= 4.1.2)
+    - Reusable/View (= 4.1.2)
+  - Reusable/Storyboard (4.1.2)
+  - Reusable/View (4.1.2)
+  - SwiftLint (0.51.0)
+
+DEPENDENCIES:
+  - Reusable
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Reusable
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
+  SwiftLint: 1b7561918a19e23bfed960e40759086e70f4dba5
+
+PODFILE CHECKSUM: f03291fad3c38c616d3d0e369e5154114368ab7b
+
+COCOAPODS: 1.12.0
