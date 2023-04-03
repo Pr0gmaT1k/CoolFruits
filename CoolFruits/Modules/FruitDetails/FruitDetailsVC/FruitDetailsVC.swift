@@ -10,6 +10,7 @@ import UIKit
 // MARK: - VC
 final class FruitDetailsVC: UIViewController {
     // MARK: - IBOutlets
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var familyLabel: UILabel!
     @IBOutlet weak var genusLabel: UILabel!
     @IBOutlet weak var nutritionLabel: UILabel!
@@ -25,10 +26,10 @@ final class FruitDetailsVC: UIViewController {
     }
     
     func fill(fruit: FruitModel) {
+        nameLabel.text = fruit.name
         familyLabel.text = "Family: \(fruit.family ?? "")"
         genusLabel.text = "Genus: \(fruit.genus ?? "")"
         nutritionLabel.text = getNutritionText(selectedFruit: fruit)
-        view.backgroundColor = fruit.isCitrus ? .green : .white
     }
     
     func getNutritionText(selectedFruit: FruitModel) -> String {

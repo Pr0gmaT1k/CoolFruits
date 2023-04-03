@@ -9,8 +9,9 @@ import UIKit
 import Reusable
 
 // MARK: - Presentable
-protocol FruitsListPresentable: UITableViewDataSource {
+protocol FruitsListPresentable: UITableViewDataSource, UISearchBarDelegate {
     var fruits: [FruitModel]? { get set }
+    var displayedFruits: [FruitModel]? { get set }
     init(view: FruitsListDisplayable)
     func refreshFruitsList()
 }
@@ -19,6 +20,7 @@ protocol FruitsListPresentable: UITableViewDataSource {
 final class FruitsListPresenter: NSObject, FruitsListPresentable {
     // MARK: - Properties
     internal var fruits: [FruitModel]?
+    internal var displayedFruits: [FruitModel]?
     private weak var displayable: FruitsListDisplayable?
     
     // MARK: - funcs
@@ -28,8 +30,11 @@ final class FruitsListPresenter: NSObject, FruitsListPresentable {
     }
     
     func refreshFruitsList() {
+        displayable?.showLoader()
         RequestManager.shared.getAllFruts { [weak self] fruits, error in
+            self?.displayable?.hideLoader(animated: true, completion: nil)
             self?.fruits = fruits
+            self?.displayedFruits = fruits
             DispatchQueue.main.async { [weak self] in
                 self?.displayable?.fruitsTableView.reloadData()
             }
@@ -40,12 +45,31 @@ final class FruitsListPresenter: NSObject, FruitsListPresentable {
 // MARK: - UITableViewDataSource
 extension FruitsListPresenter {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fruits?.count ?? 0
+        return displayedFruits?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as FruitCell
-        cell.fill(fruit: fruits?[indexPath.row])
+        cell.fill(fruit: displayedFruits?[indexPath.row])
         return cell
+    }
+}
+
+// MARK: - Search Bar Delegate
+extension FruitsListPresenter: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        displayedFruits = searchText.isEmpty ? fruits : fruits?.filter { $0.name?.range(of: searchText, options: .caseInsensitive) != nil }
+        displayable?.fruitsTableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = nil
+        searchBar.endEditing(true)
+        displayedFruits = fruits
+        displayable?.fruitsTableView.reloadData()
     }
 }

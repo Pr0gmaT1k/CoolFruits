@@ -13,13 +13,14 @@ protocol FruitsListVCDelegate: AnyObject {
 }
 
 // MARK: - Displayable
-protocol FruitsListDisplayable: AnyObject {
+protocol FruitsListDisplayable: Loadable {
     var fruitsTableView: UITableView! { get set }
 }
 
 // MARK: - Class
 class FruitsListVC: UIViewController, FruitsListDisplayable {
     // MARK: - IBOutlets
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var fruitsTableView: UITableView!
     
     // MARK: - Properties
@@ -29,8 +30,10 @@ class FruitsListVC: UIViewController, FruitsListDisplayable {
     // MARK: - funcs
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = presenter
         fruitsTableView.delegate = self
         fruitsTableView.dataSource = presenter
+        fruitsTableView.keyboardDismissMode = .onDrag
         presenter.refreshFruitsList()
     }
 }
