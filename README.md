@@ -25,7 +25,7 @@ Building the code
     cd CoolFruits
     pod install
     ```
-1. Open `weapp-ios.xcworkspace` in Xcode.
+1. Open `CoolFruits.xcworkspace` in Xcode.
 
 Dont forget to clone the corresponding branch.
 
